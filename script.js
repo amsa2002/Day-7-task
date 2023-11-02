@@ -23,6 +23,6 @@ var request = new XMLHttpRequest();
  request.onload = function(){
      var data = request.response;
     var result = JSON.parse(data);
-    var res = result.filter((x)=>x.population<300000)
+    var res = result.filter((x)=>x.population<200000)
     res.map((ele)=>console.log(ele.name.common))
  }
